@@ -6,23 +6,32 @@
   opacity: 0.5;
   /*box-shadow: 0 6px 12px #0005;*/
 }
-
 .card__container {
   display: grid;
   gap: 60px;
   overflow: scroll;
   padding: 20px;
 }
-
+.card__header {
+  margin: 0;
+}
 .card__tags {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   padding: 0;
   list-style: none;
+  margin-bottom: 0;
 }
 .card__tags > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px 12px;
   margin: 4px;
   background: #000;
+  border: solid 2px transperent;
   border-radius: 4px;
+}
+.card__tags > li:active {
+  border: solid 2px var(--text);
 }

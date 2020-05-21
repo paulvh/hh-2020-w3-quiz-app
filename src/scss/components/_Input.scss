@@ -1,0 +1,11 @@
+.input {
+  border: solid 2px #222;
+  border-radius: 4px;
+  padding: 20px;
+  background: var(--secondary);
+}
+.input__container {
+  display: grid;
+  gap: 60px;
+  padding: 20px;
+}
