@@ -1,19 +1,22 @@
 .navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2px;
+  gap: 0;
+  background: #151600;
 }
 
 .navigation__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #333;
-  color: white;
+  background: var(--primary);
+  color: var(--text);
   text-decoration: none;
   font-size: 1.4em;
+  border: solid 1px #151600;
+  border-radius: 4px;
 }
 
 .navigation__link--active {
-  background: hotpink;
+  background: var(--tertiary);
 }
