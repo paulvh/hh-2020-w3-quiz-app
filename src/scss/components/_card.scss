@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   border: solid 2px #222;
   border-radius: 4px;
   padding: 20px;
@@ -34,9 +35,21 @@
 }
 .card__button {
   display: flex;
+  color: var(--text);
   justify-content: center;
   padding: 0;
   background: transparent;
   border: solid 2px transparent;
   /*width: 30px;*/
+}
+.card__bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  background: #000;
+  width: 48px;
+  height: 48px;
 }
